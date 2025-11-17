@@ -1,0 +1,31 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Dark background -->
+  <rect width="200" height="200" fill="#1e1e24"></rect>
+  
+  <!-- Eye shape -->
+  <path d="M30 100 Q100 30 170 100 Q100 170 30 100 Z" fill="none" stroke="url(#grad)" stroke-width="5"></path>
+  
+  <!-- Neural network inside eye -->
+  <circle cx="100" cy="100" r="10" fill="#FFD700"></circle>
+  <line x1="100" y1="100" x2="130" y2="85" stroke="#00BFFF" stroke-width="2"></line>
+  <circle cx="130" cy="85" r="4" fill="#00BFFF"></circle>
+  <line x1="100" y1="100" x2="70" y2="85" stroke="#00BFFF" stroke-width="2"></line>
+  <circle cx="70" cy="85" r="4" fill="#00BFFF"></circle>
+  <line x1="100" y1="100" x2="130" y2="115" stroke="#00BFFF" stroke-width="2"></line>
+  <circle cx="130" cy="115" r="4" fill="#00BFFF"></circle>
+  <line x1="100" y1="100" x2="70" y2="115" stroke="#00BFFF" stroke-width="2"></line>
+  <circle cx="70" cy="115" r="4" fill="#00BFFF"></circle>
+  
+  <!-- Tiny dashboard bars as pupil -->
+  <rect x="95" y="95" width="2" height="10" fill="#FFD700"></rect>
+  <rect x="100" y="95" width="2" height="7" fill="#FFD700"></rect>
+  <rect x="105" y="95" width="2" height="5" fill="#FFD700"></rect>
+
+  <!-- Gradient -->
+  <defs>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8A2BE2"></stop>
+      <stop offset="100%" stop-color="#00BFFF"></stop>
+    </linearGradient>
+  </defs>
+</svg>
