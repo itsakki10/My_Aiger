@@ -1,9 +1,13 @@
 import mongoose from "mongoose";
 
 export const connectDB = async () => {
-  await mongoose
-    .connect(
-      "REMOVED@cluster0.xm6qtbh.mongodb.net/MyAiger"
-    )
-    .then(() => console.log("DB connected successfully"));
+  try {
+    await mongoose.connect(process.env.MONGO_URI);
+
+    console.log("DB connected successfully");
+  } catch (error) {
+    console.log(error);
+
+    process.exit(1);
+  }
 };
